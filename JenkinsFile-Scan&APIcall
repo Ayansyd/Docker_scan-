@@ -1,0 +1,225 @@
+pipeline {
+    agent any
+
+    environment {
+        VALUES_FILE = "docker_pull_values.txt"
+        // Base URL for scan API – the image name will be appended during the API call.
+        API_ENDPOINT = "http://192.168.0.178:5000/scan"
+    }
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                // Clone the repository
+                git branch: 'master', url: 'https://github.com/Ayansyd/test_scan.git'
+            }
+        }
+        
+        stage('Extract and Process Docker Pull Values') {
+            steps {
+                script {
+                    def workspaceFiles = findFiles(glob: '**/*')
+                    def variableMap = [:] // Store variable definitions
+                    def extractedValues = [] // Store resolved values for docker pull
+
+                    echo "Found ${workspaceFiles.size()} files in the workspace."
+
+                    // First pass: collect all variable definitions from all files
+                    workspaceFiles.each { file ->
+                        try {
+                            if (!file.directory && file.path.matches(/(?i).*\.(sh|bash|txt|md|yaml|yml|json|properties|gradle|dockerfile|jenkinsfile|groovy|py|js|java|conf)$/)) {
+                                echo "First pass - Processing file: ${file.path}"
+                                def content = readFile(file.path).split('\n')
+                                
+                                content.each { line ->
+                                    def varMatcher1 = line =~ /(\w+)\s*=\s*"([^"]+)"/
+                                    def varMatcher2 = line =~ /(\w+)\s*=\s*([^"\s;]+)/
+                                    def varMatcher3 = line =~ /export\s+(\w+)\s*=\s*"([^"]+)"/
+                                    def varMatcher4 = line =~ /export\s+(\w+)\s*=\s*([^"\s;]+)/
+                                    
+                                    if (varMatcher1.find()) {
+                                        variableMap[varMatcher1.group(1)] = varMatcher1.group(2)
+                                        echo "Found variable type 1: ${varMatcher1.group(1)} = ${varMatcher1.group(2)}"
+                                    } else if (varMatcher3.find()) {
+                                        variableMap[varMatcher3.group(1)] = varMatcher3.group(2)
+                                        echo "Found variable type 3: ${varMatcher3.group(1)} = ${varMatcher3.group(2)}"
+                                    } else if (varMatcher2.find()) {
+                                        variableMap[varMatcher2.group(1)] = varMatcher2.group(2)
+                                        echo "Found variable type 2: ${varMatcher2.group(1)} = ${varMatcher2.group(2)}"
+                                    } else if (varMatcher4.find()) {
+                                        variableMap[varMatcher4.group(1)] = varMatcher4.group(2)
+                                        echo "Found variable type 4: ${varMatcher4.group(1)} = ${varMatcher4.group(2)}"
+                                    }
+                                }
+                            }
+                        } catch (Exception e) {
+                            echo "Error processing ${file.path}: ${e.message}"
+                        }
+                    }
+
+                    echo "Variable map after first pass: ${variableMap}"
+
+                    // Second pass: extract docker pull commands and resolve variables
+                    workspaceFiles.each { file ->
+                        try {
+                            if (!file.directory && file.path.matches(/(?i).*\.(sh|bash|txt|md|yaml|yml|json|properties|gradle|dockerfile|jenkinsfile|groovy|py|js|java|conf)$/)) {
+                                echo "Second pass - Processing file: ${file.path}"
+                                def content = readFile(file.path).split('\n')
+                                
+                                content.each { line ->
+                                    def originalLine = line.trim()
+                                    if (originalLine.contains('docker pull')) {
+                                        echo "Found docker pull command: ${originalLine}"
+                                        
+                                        // Pattern 1: docker pull with quoted variable ${VAR}
+                                        def pullMatcher1 = originalLine =~ /docker pull\s+"?\$\{(\w+)\}"?/
+                                        // Pattern 2: docker pull with unquoted variable $VAR
+                                        def pullMatcher2 = originalLine =~ /docker pull\s+"?\$(\w+)"?/
+                                        // Pattern 3: docker pull with direct image name
+                                        def pullMatcher3 = originalLine =~ /docker pull\s+"?([^"\s\$]+(?::[^"\s]+)?)"?/
+                                        
+                                        if (pullMatcher1.find()) {
+                                            def varName = pullMatcher1.group(1)
+                                            echo "Found variable reference \${${varName}} in docker pull"
+                                            if (variableMap.containsKey(varName)) {
+                                                def resolvedValue = variableMap[varName]
+                                                echo "Resolved ${varName} to: ${resolvedValue}"
+                                                if (!extractedValues.contains(resolvedValue)) {
+                                                    extractedValues << resolvedValue
+                                                }
+                                            } else {
+                                                echo "WARNING: Variable ${varName} not found in variable map"
+                                            }
+                                        } else if (pullMatcher2.find()) {
+                                            def varName = pullMatcher2.group(1)
+                                            echo "Found variable reference \$${varName} in docker pull"
+                                            if (variableMap.containsKey(varName)) {
+                                                def resolvedValue = variableMap[varName]
+                                                echo "Resolved ${varName} to: ${resolvedValue}"
+                                                if (!extractedValues.contains(resolvedValue)) {
+                                                    extractedValues << resolvedValue
+                                                }
+                                            } else {
+                                                echo "WARNING: Variable ${varName} not found in variable map"
+                                            }
+                                        } else if (pullMatcher3.find()) {
+                                            def directImage = pullMatcher3.group(1)
+                                            echo "Found direct image reference: ${directImage}"
+                                            if (!extractedValues.contains(directImage)) {
+                                                extractedValues << directImage
+                                            }
+                                        } else {
+                                            echo "WARNING: Unable to extract image from line: ${originalLine}"
+                                        }
+                                    }
+                                }
+                            }
+                        } catch (Exception e) {
+                            echo "Error processing ${file.path}: ${e.message}"
+                        }
+                    }
+
+                    if (!extractedValues.isEmpty()) {
+                        def imagesStatement = "The images are: ${extractedValues.join(', ')}"
+                        echo imagesStatement
+                        writeFile file: env.VALUES_FILE, text: extractedValues.join('\n')
+                        archiveArtifacts artifacts: env.VALUES_FILE
+                    } else {
+                        echo "No Docker image values extracted."
+                        error "Pipeline failed: No Docker images found for scanning"
+                    }
+                }
+            }
+        }
+        
+        stage('Call API with Extracted Images') {
+            steps {
+                script {
+                    def imageValues = readFile(env.VALUES_FILE).trim().split('\n')
+                    def scanIds = []  // To store scan IDs returned from the API
+                    
+                    imageValues.each { image ->
+                        echo "Calling scan API for image: ${image}"
+                        def response = sh(script: """
+                            curl -s -X POST "${env.API_ENDPOINT}/${image}" \
+                            -H 'Content-Type: application/json'
+                        """, returnStdout: true).trim()
+                        echo "API response for image ${image}: ${response}"
+                        
+                        def jsonResponse = new groovy.json.JsonSlurper().parseText(response)
+                        if (jsonResponse.scan_id) {
+                            def scanId = jsonResponse.scan_id
+                            echo "Extracted scan id: ${scanId}"
+                            scanIds << scanId
+                        } else {
+                            error "No scan_id found in API response for image: ${image}"
+                        }
+                    }
+                    
+                    writeFile file: "scan_ids.txt", text: scanIds.join('\n')
+                    archiveArtifacts artifacts: "scan_ids.txt"
+                }
+            }
+        }
+        
+        stage('Check Scan Status and Run Bash Script') {
+            steps {
+                script {
+                    def scanIds = readFile("scan_ids.txt").trim().split('\n')
+                    
+                    scanIds.each { scanId ->
+                        echo "Checking scan status for scan id: ${scanId}"
+                        def jenkinsStatus = "IN_PROGRESS"
+                        def statusJson = null
+                        
+                        // Poll until jenkins_status is either SUCCESS or FAILURE
+                        while (jenkinsStatus.toUpperCase() == "IN_PROGRESS") {
+                            echo "Scan id ${scanId} is still in progress. Waiting..."
+                            sleep time: 10, unit: 'SECONDS'
+                            def statusResponse = sh(script: """
+                                curl -s 'http://192.168.0.178:5000/scan_status/${scanId}'
+                            """, returnStdout: true).trim()
+                            echo "Status response for scan id ${scanId}: ${statusResponse}"
+                            
+                            statusJson = new groovy.json.JsonSlurper().parseText(statusResponse)
+                            // Check for the jenkins_status field. If not available, fallback to status.
+                            if (statusJson.jenkins_status) {
+                                jenkinsStatus = statusJson.jenkins_status
+                            } else {
+                                jenkinsStatus = statusJson.status ?: "IN_PROGRESS"
+                            }
+                        }
+                        
+                        echo "Final status for scan id ${scanId}: ${jenkinsStatus}"
+                        if (jenkinsStatus.toUpperCase() != "SUCCESS") {
+                            if (statusJson.logs) {
+                                echo "Logs for scan id ${scanId}: ${statusJson.logs}"
+                            }
+                            error "Pipeline failed due to scan id ${scanId} with status: ${jenkinsStatus}"
+                        } else {
+                            echo "Scan id ${scanId} completed successfully."
+                        }
+                    }
+                    
+                    // If all scans are successful, run your bash script.
+                    echo "All scans successful. Running the bash script."
+                    sh "${WORKSPACE}/docker_scan.sh"
+                    echo "Pipeline passed."
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            echo "Pipeline completed."
+        }
+        success {
+            echo "Pipeline succeeded."
+        }
+        failure {
+            echo "Pipeline failed."
+        }
+    }
+}
+

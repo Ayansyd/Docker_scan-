@@ -1,0 +1,929 @@
+2025-03-03 10:56:06,870 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 10:56:06,873 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 10:56:06,873 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 10:57:11,131 - werkzeug - ERROR - 192.168.0.178 - - [03/Mar/2025 10:57:11] code 400, message Bad request version ('À\x13À')
+2025-03-03 10:57:11,131 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 10:57:11] "[35m[1m\x16\x03\x01\x00å\x01\x00\x00á\x03\x03ÓMôÑ\x87\x01ú\x8cáÐUùù<%\x0c\x9ekV¥©:\x17H\x18\x8bTS\x01Z¿Å ¬Bg®]V\x11¯a#äq\x8a\x15#²\x07Å¤ÉwÊ¡Î ÃØàE8¹«\x00$\x13\x01\x13\x02\x13\x03À/À+À0À,À'Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+2025-03-03 10:57:21,239 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 10:57:21] "[33mPOST /nginx:latest HTTP/1.1[0m" 404 -
+2025-03-03 10:58:02,067 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 10:58:02] "[33mGET / HTTP/1.1[0m" 404 -
+2025-03-03 10:58:02,139 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 10:58:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-03 10:58:24,469 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 10:58:24] "[35m[1mPOST /scan/nginx:latest HTTP/1.1[0m" 202 -
+2025-03-03 11:27:37,088 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 11:27:37,091 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 11:27:37,091 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 11:28:05,911 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:28:05] "[35m[1mPOST /scan/nginx:latest HTTP/1.1[0m" 202 -
+2025-03-03 11:28:25,311 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:28:25] "[31m[1mPOST /scan_results/4a325627eaca817700963d6ee494e308 HTTP/1.1[0m" 405 -
+2025-03-03 11:28:56,131 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:28:56] "GET /scan_results/4a325627eaca817700963d6ee494e308 HTTP/1.1" 200 -
+2025-03-03 11:33:00,266 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 11:33:00,269 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 11:33:00,269 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 11:33:45,695 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 11:33:45,697 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 11:33:45,697 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 11:34:04,782 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:34:04] "[35m[1mGET /scan/nginx:latest HTTP/1.1[0m" 202 -
+2025-03-03 11:34:33,565 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:34:33] "GET /scan_results/b1d33a4b49e84b468e4fc6d9f0473e27 HTTP/1.1" 200 -
+2025-03-03 11:36:54,863 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:36:54] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-03 11:37:15,289 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:37:15] "GET /scan_results/63a83962b338c6bcf33773dde439f75e HTTP/1.1" 200 -
+2025-03-03 11:45:39,685 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 11:45:39,687 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 11:45:39,687 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 11:46:00,371 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:46:00] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-03 11:46:18,778 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:46:18] "GET /scan_results/11b7899ec679727828dcad4ba51578ba HTTP/1.1" 200 -
+2025-03-03 11:48:18,475 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:48:18] "[33mGET /scan_results/11b7899ec679727828dcad4ba51578ba HTTP/1.1[0m" 404 -
+2025-03-03 11:49:18,466 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:49:18] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-03 11:50:12,689 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:50:12] "GET /scan_results/80b720270cacf5116407aec60f9b862c HTTP/1.1" 200 -
+2025-03-03 11:50:38,690 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 11:50:38] "GET /scan_results/80b720270cacf5116407aec60f9b862c HTTP/1.1" 200 -
+2025-03-03 12:00:33,877 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 12:00:33,879 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 12:00:33,879 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 12:01:11,457 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:01:11] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-03 12:01:29,223 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:01:29] "GET /scan_results/e9833fc7c55e4293daf4e4ef5a7ca907 HTTP/1.1" 200 -
+2025-03-03 12:06:25,552 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 12:06:25,554 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 12:06:25,554 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 12:06:47,437 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:06:47] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-03 12:07:02,676 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:07:02] "GET /scan_results/9ba0ab65ca12c5255d002426529470bd HTTP/1.1" 200 -
+2025-03-03 12:09:05,203 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 12:09:05,205 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 12:09:05,205 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 12:09:32,470 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:09:32] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-03 12:09:50,965 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:09:50] "GET /scan_results/18baf71cce6c0e8ae96d011659272a02 HTTP/1.1" 200 -
+2025-03-03 12:23:23,906 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 12:23:23,909 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 12:23:23,909 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 12:23:27,770 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:23:27] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-03 12:23:40,118 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:23:40] "GET /scan_results/61487ba92117ad3b9b938ac2a0f19d92 HTTP/1.1" 200 -
+2025-03-03 12:28:21,646 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 12:28:21,649 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 12:28:21,649 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 12:28:30,555 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: pulling_image (10%)
+2025-03-03 12:28:30,555 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:28:30] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-03 12:28:30,565 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-03 12:28:30,565 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: saving_image (20%)
+2025-03-03 12:28:30,799 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: creating_hash (25%)
+2025-03-03 12:28:30,855 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (30%)
+2025-03-03 12:28:30,856 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (30%)
+2025-03-03 12:28:30,856 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (31%)
+2025-03-03 12:28:30,856 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (32%)
+2025-03-03 12:28:30,890 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (33%)
+2025-03-03 12:28:30,890 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (34%)
+2025-03-03 12:28:30,890 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (35%)
+2025-03-03 12:28:30,890 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (36%)
+2025-03-03 12:28:30,890 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (37%)
+2025-03-03 12:28:30,890 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (38%)
+2025-03-03 12:28:30,890 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: extracting_image (39%)
+2025-03-03 12:28:30,890 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: vulnerability_scanning (40%)
+2025-03-03 12:28:30,919 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: trivy_scan_complete (60%)
+2025-03-03 12:28:30,919 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: virus_scanning (60%)
+2025-03-03 12:28:39,706 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: clamav_scan_complete (80%)
+2025-03-03 12:28:39,706 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: malware_scanning (80%)
+2025-03-03 12:28:39,789 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: yara_scan_complete (90%)
+2025-03-03 12:28:39,790 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: saving_results (95%)
+2025-03-03 12:28:39,790 - scanners.scan_manager - INFO - Scan c7bd690ae3b20111cd38f52786d948d0 status updated: completed (100%)
+2025-03-03 12:28:56,969 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:28:56] "GET /scan_results/c7bd690ae3b20111cd38f52786d948d0 HTTP/1.1" 200 -
+
+i want to give propity to trivy ans clamav if both of them detect nothing update it to safe keep yara as a warning parameter not for status make the required changes2025-03-03 12:44:49,212 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 12:44:49,215 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 12:44:49,215 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 12:44:58,412 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: pulling_image (10%)
+2025-03-03 12:44:58,413 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:44:58] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-03 12:44:58,423 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-03 12:44:58,423 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: saving_image (20%)
+2025-03-03 12:44:58,660 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: creating_hash (25%)
+2025-03-03 12:44:58,718 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (30%)
+2025-03-03 12:44:58,719 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (30%)
+2025-03-03 12:44:58,719 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (31%)
+2025-03-03 12:44:58,719 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (32%)
+2025-03-03 12:44:58,754 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (33%)
+2025-03-03 12:44:58,754 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (34%)
+2025-03-03 12:44:58,754 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (35%)
+2025-03-03 12:44:58,755 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (36%)
+2025-03-03 12:44:58,755 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (37%)
+2025-03-03 12:44:58,755 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (38%)
+2025-03-03 12:44:58,755 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: extracting_image (39%)
+2025-03-03 12:44:58,755 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: vulnerability_scanning (40%)
+2025-03-03 12:44:58,782 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: trivy_scan_complete (60%)
+2025-03-03 12:44:58,782 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: virus_scanning (60%)
+2025-03-03 12:45:07,322 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: clamav_scan_complete (80%)
+2025-03-03 12:45:07,322 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: malware_scanning (80%)
+2025-03-03 12:45:07,405 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: yara_scan_complete (90%)
+2025-03-03 12:45:07,405 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: saving_results (95%)
+2025-03-03 12:45:07,405 - scanners.scan_manager - INFO - Scan 1773f861867e68102878ce9ff046cbd6 status updated: completed (100%)
+2025-03-03 12:45:15,332 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:45:15] "GET /scan_results/1773f861867e68102878ce9ff046cbd6 HTTP/1.1" 200 -
+2025-03-03 12:46:04,799 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: pulling_image (10%)
+2025-03-03 12:46:04,799 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:46:04] "[35m[1mGET /scan/ayandocker277/docker-scan:latest HTTP/1.1[0m" 202 -
+2025-03-03 12:46:04,812 - scanners.scan_manager - INFO - Image ayandocker277/docker-scan:latest already available locally
+2025-03-03 12:46:04,812 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: saving_image (20%)
+2025-03-03 12:46:06,683 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: creating_hash (25%)
+2025-03-03 12:46:06,794 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (30%)
+2025-03-03 12:46:06,794 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (30%)
+2025-03-03 12:46:06,795 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (30%)
+2025-03-03 12:46:06,795 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (31%)
+2025-03-03 12:46:06,795 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (32%)
+2025-03-03 12:46:06,795 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (33%)
+2025-03-03 12:46:06,802 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (34%)
+2025-03-03 12:46:06,802 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (35%)
+2025-03-03 12:46:06,860 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (36%)
+2025-03-03 12:46:06,861 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (37%)
+2025-03-03 12:46:06,861 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (38%)
+2025-03-03 12:46:06,861 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: extracting_image (39%)
+2025-03-03 12:46:06,861 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: vulnerability_scanning (40%)
+2025-03-03 12:46:06,886 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: trivy_scan_complete (60%)
+2025-03-03 12:46:06,886 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: virus_scanning (60%)
+2025-03-03 12:46:17,717 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: clamav_scan_complete (80%)
+2025-03-03 12:46:17,717 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: malware_scanning (80%)
+2025-03-03 12:46:17,879 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: yara_scan_complete (90%)
+2025-03-03 12:46:17,879 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: saving_results (95%)
+2025-03-03 12:46:17,879 - scanners.scan_manager - INFO - Scan b47312015624a9582c2de8a6a08596d6 status updated: completed (100%)
+2025-03-03 12:46:21,624 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 12:46:21] "GET /scan_results/b47312015624a9582c2de8a6a08596d6 HTTP/1.1" 200 -
+2025-03-03 15:57:33,334 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 15:57:33,337 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 15:57:33,337 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 15:57:36,473 - scanners.scan_manager - INFO - Scan a0befadb63931406931cc25294ceb98f status updated: pulling_image (10%)
+2025-03-03 15:57:36,474 - werkzeug - INFO - 192.168.0.87 - - [03/Mar/2025 15:57:36] "[35m[1mPOST /scan/null HTTP/1.1[0m" 202 -
+2025-03-03 15:57:36,508 - scanners.scan_manager - INFO - Pulling image: null
+2025-03-03 15:57:39,413 - scanners.scan_manager - ERROR - Failed to pull docker image with return code 1
+2025-03-03 15:57:39,413 - scanners.scan_manager - INFO - Scan a0befadb63931406931cc25294ceb98f status updated: failed (0%)
+2025-03-03 15:57:57,597 - scanners.scan_manager - INFO - Scan 60ade03e0af52a2c9f4de232f74a860f status updated: pulling_image (10%)
+2025-03-03 15:57:57,598 - werkzeug - INFO - 192.168.0.87 - - [03/Mar/2025 15:57:57] "[35m[1mPOST /scan/null HTTP/1.1[0m" 202 -
+2025-03-03 15:57:57,628 - scanners.scan_manager - INFO - Pulling image: null
+2025-03-03 15:58:00,481 - scanners.scan_manager - ERROR - Failed to pull docker image with return code 1
+2025-03-03 15:58:00,482 - scanners.scan_manager - INFO - Scan 60ade03e0af52a2c9f4de232f74a860f status updated: failed (0%)
+2025-03-03 16:17:16,139 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-03 16:17:16,142 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-03 16:17:16,142 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 16:17:16,444 - werkzeug - INFO - 192.168.0.87 - - [03/Mar/2025 16:17:16] "[33mPOST /scan/ HTTP/1.1[0m" 404 -
+2025-03-03 16:17:24,667 - werkzeug - INFO - 192.168.0.87 - - [03/Mar/2025 16:17:24] "[33mPOST /scan/ HTTP/1.1[0m" 404 -
+2025-03-03 16:36:21,566 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: pulling_image (10%)
+2025-03-03 16:36:21,566 - werkzeug - INFO - 192.168.0.87 - - [03/Mar/2025 16:36:21] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-03 16:36:21,584 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-03 16:36:21,584 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: saving_image (20%)
+2025-03-03 16:36:22,026 - werkzeug - INFO - 192.168.0.87 - - [03/Mar/2025 16:36:22] "GET /scan_status/fc7396cf42b728e41d6ca59d3ec54379 HTTP/1.1" 200 -
+2025-03-03 16:36:22,082 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: creating_hash (25%)
+2025-03-03 16:36:22,143 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (30%)
+2025-03-03 16:36:22,144 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (30%)
+2025-03-03 16:36:22,144 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (31%)
+2025-03-03 16:36:22,144 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (32%)
+2025-03-03 16:36:22,178 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (33%)
+2025-03-03 16:36:22,178 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (34%)
+2025-03-03 16:36:22,178 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (35%)
+2025-03-03 16:36:22,178 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (36%)
+2025-03-03 16:36:22,178 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (37%)
+2025-03-03 16:36:22,178 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (38%)
+2025-03-03 16:36:22,178 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: extracting_image (39%)
+2025-03-03 16:36:22,178 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: vulnerability_scanning (40%)
+2025-03-03 16:36:22,209 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: trivy_scan_complete (60%)
+2025-03-03 16:36:22,209 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: virus_scanning (60%)
+2025-03-03 16:36:30,554 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: clamav_scan_complete (80%)
+2025-03-03 16:36:30,554 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: malware_scanning (80%)
+2025-03-03 16:36:30,637 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: yara_scan_complete (90%)
+2025-03-03 16:36:30,638 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: saving_results (95%)
+2025-03-03 16:36:30,638 - scanners.scan_manager - INFO - Scan fc7396cf42b728e41d6ca59d3ec54379 status updated: completed (100%)
+2025-03-03 16:37:16,661 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 16:37:16] "[33mGET /scan_status/b47312015624a9582c2de8a6a08596d6 HTTP/1.1[0m" 404 -
+2025-03-03 16:37:41,436 - werkzeug - INFO - 192.168.0.178 - - [03/Mar/2025 16:37:41] "GET /scan_status/fc7396cf42b728e41d6ca59d3ec54379 HTTP/1.1" 200 -
+2025-03-04 09:59:49,357 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-04 09:59:49,362 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-04 09:59:49,362 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-04 10:33:44,386 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: pulling_image (10%)
+2025-03-04 10:33:44,387 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 10:33:44] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 10:33:44,431 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 10:33:44,431 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: saving_image (20%)
+2025-03-04 10:33:44,469 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 10:33:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-04 10:33:45,312 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: creating_hash (25%)
+2025-03-04 10:33:45,375 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (30%)
+2025-03-04 10:33:45,376 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (30%)
+2025-03-04 10:33:45,376 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (31%)
+2025-03-04 10:33:45,376 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (32%)
+2025-03-04 10:33:45,408 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (33%)
+2025-03-04 10:33:45,408 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (34%)
+2025-03-04 10:33:45,408 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (35%)
+2025-03-04 10:33:45,408 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (36%)
+2025-03-04 10:33:45,408 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (37%)
+2025-03-04 10:33:45,408 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (38%)
+2025-03-04 10:33:45,408 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: extracting_image (39%)
+2025-03-04 10:33:45,408 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: vulnerability_scanning (40%)
+2025-03-04 10:33:45,502 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: trivy_scan_complete (60%)
+2025-03-04 10:33:45,502 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: virus_scanning (60%)
+2025-03-04 10:33:53,869 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: clamav_scan_complete (80%)
+2025-03-04 10:33:53,869 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: malware_scanning (80%)
+2025-03-04 10:33:53,953 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: yara_scan_complete (90%)
+2025-03-04 10:33:53,953 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: saving_results (95%)
+2025-03-04 10:33:53,953 - scanners.scan_manager - INFO - Scan 4ce6476f93443a18004bdffb54f5d75b status updated: completed (100%)
+2025-03-04 10:34:08,576 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 10:34:08] "GET /scan_status/4ce6476f93443a18004bdffb54f5d75b HTTP/1.1" 200 -
+2025-03-04 11:31:10,857 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-04 11:31:10,859 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-04 11:31:10,859 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-04 11:43:07,954 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: pulling_image (10%)
+2025-03-04 11:43:07,958 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 11:43:07] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 11:43:07,988 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 11:43:07,989 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: saving_image (20%)
+2025-03-04 11:43:08,323 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: creating_hash (25%)
+2025-03-04 11:43:08,377 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (30%)
+2025-03-04 11:43:08,378 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (30%)
+2025-03-04 11:43:08,378 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (31%)
+2025-03-04 11:43:08,378 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (32%)
+2025-03-04 11:43:08,411 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (33%)
+2025-03-04 11:43:08,411 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (34%)
+2025-03-04 11:43:08,411 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (35%)
+2025-03-04 11:43:08,411 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (36%)
+2025-03-04 11:43:08,411 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (37%)
+2025-03-04 11:43:08,411 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (38%)
+2025-03-04 11:43:08,411 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: extracting_image (39%)
+2025-03-04 11:43:08,411 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: vulnerability_scanning (40%)
+2025-03-04 11:43:08,436 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: trivy_scan_complete (60%)
+2025-03-04 11:43:08,436 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: virus_scanning (60%)
+2025-03-04 11:43:16,898 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: clamav_scan_complete (80%)
+2025-03-04 11:43:16,899 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: malware_scanning (80%)
+2025-03-04 11:43:16,981 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: yara_scan_complete (90%)
+2025-03-04 11:43:16,981 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: saving_results (95%)
+2025-03-04 11:43:16,981 - scanners.scan_manager - INFO - Scan 3aac63cbdb16bd79e58a307adca69dab status updated: completed (100%)
+2025-03-04 11:43:42,457 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 11:43:42] "GET /scan_status/3aac63cbdb16bd79e58a307adca69dab HTTP/1.1" 200 -
+2025-03-04 11:53:36,526 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-04 11:53:36,528 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-04 11:53:36,528 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-04 14:53:29,049 - werkzeug - ERROR - 192.168.0.214 - - [04/Mar/2025 14:53:29] code 400, message Bad request version ("°ñ¯{\x18\x04ZFq\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2025-03-04 14:53:29,050 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:53:29] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03BlQD\x14ðÛ\x86cJ|Ù³ïÇ\x86\x7fB\x99ÃE\x16hN\x09²\x15\x04íî\x06\x8f ãî\x1dg\x95%³\x00:02KÏÃ%]Y\x15\x92_gº\x0b°ñ¯{\x18\x04ZFq\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" HTTPStatus.BAD_REQUEST -
+2025-03-04 14:57:00,278 - werkzeug - ERROR - 192.168.0.214 - - [04/Mar/2025 14:57:00] code 400, message Bad request version ('\x90\x05')
+2025-03-04 14:57:00,279 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:57:00] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x07¿ªb\x83ï È¨QÛ>çR\x9f\x9a\x96\x9dXÍ\x89¯|\x01f¾×czfO: \x90\x05[0m" HTTPStatus.BAD_REQUEST -
+2025-03-04 14:57:31,447 - werkzeug - ERROR - 192.168.0.214 - - [04/Mar/2025 14:57:31] code 400, message Bad request version ("\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2025-03-04 14:57:31,448 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:57:31] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x90G¶PÌ19K\x09Í\x81 \x0c(?\\8\x93tï\x03Â9c\x9bTæ*CÂU\x9f Ô\x19ÇOÙy÷Ïð\x03U;úy\x8dù\x8csÂð\x92mLwMª¡\x89É I\x1f\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" HTTPStatus.BAD_REQUEST -
+2025-03-04 14:58:04,521 - werkzeug - ERROR - 192.168.0.214 - - [04/Mar/2025 14:58:04] code 400, message Bad request version ("\x9b\x92r@@oà/\x93\x9fÈZ?ò÷\x8a§Ì®\x01\x89dQ\x9c<f\x91Ï±ö?3\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2025-03-04 14:58:04,521 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:58:04] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03QÞò3j\x1e\\u\x8bÊ\x98Û\x9a2Q\x07\x87º\x12^ù\x13uU \x96S¡Zy \x9b \x9b\x92r@@oà/\x93\x9fÈZ?ò÷\x8a§Ì®\x01\x89dQ\x9c<f\x91Ï±ö?3\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" HTTPStatus.BAD_REQUEST -
+2025-03-04 14:58:16,389 - werkzeug - ERROR - 192.168.0.214 - - [04/Mar/2025 14:58:16] code 400, message Bad request version ('I\x0e@\\ïm\xadÞKùd1(»¹ô')
+2025-03-04 14:58:16,389 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:58:16] "[35m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03ø\x8dð4\x87ñ¹PÍ««þFd\x9cù,ÕHïT\x87\x0e7ê\x07g\x1c}-Û\x92 &;°\x13,\x9eYÍ\x0bgÉR\x1eI\x0e@\\ïm­ÞKùd1(»¹ô[0m" HTTPStatus.BAD_REQUEST -
+2025-03-04 14:58:16,405 - werkzeug - ERROR - 192.168.0.214 - - [04/Mar/2025 14:58:16] code 400, message Bad request version ('xeU3¸\x02Tæ\x96êº[Ð!¨Î2?bÆ\x04ÿ¥iøôE\x93\x11¨¤bÃÌ\x16@p\\rÏY\x89ö\x86`Ï`Á¼(ÏLd\x11³')
+2025-03-04 14:58:16,405 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:58:16] "[35m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03¨?Ö¤së;ÚÌ\x15K`YYHE¹BMÔ\x1e\x15Ñ\x0dÙÎSk'\x13\x87¬ ÎAÃÔKb­@\x12ÇA\x978\x12\x9dàsQniõ\x9c»Li$ý=B0ð3\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Súú\x00\x00\x00\x17\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04ÀÜiÂ3\x82M¿\x82z¹)\x90C"\x04¥ò\x8a³R¾´\x02\x1exeU3¸\x02Tæ\x96êº[Ð!¨Î2?bÆ\x04ÿ¥iøôE\x93\x11¨¤bÃÌ\x16@p\\rÏY\x89ö\x86`Ï`Á¼(ÏLd\x11³[0m" HTTPStatus.BAD_REQUEST -
+2025-03-04 14:58:16,483 - werkzeug - ERROR - 192.168.0.214 - - [04/Mar/2025 14:58:16] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03P!\x8dpäÎ¾ß¹\x7fí\x9c¶')
+2025-03-04 14:58:16,483 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:58:16] "[35m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03P!\x8dpäÎ¾ß¹\x7fí\x9c¶\x85D/åF=\x80Ñ_\x8b\x8c7»Èä[0m" HTTPStatus.BAD_REQUEST -
+2025-03-04 14:58:16,488 - werkzeug - ERROR - 192.168.0.214 - - [04/Mar/2025 14:58:16] code 400, message Bad request version ('9¤\x8f¤Á/Ö\x9b£ÃQ\x84q')
+2025-03-04 14:58:16,488 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:58:16] "[35m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03!\x0b\x8cNQÂ\x09l\x05+¸°\x00cè(LyzeØ\x0f\x9c@\x90ó\x7fj\x97á×\x09 ðw¶\x8eÍA+å³.Sõ\x8eúì^,Üàê0\x83Ý\x95\x09T=ø¾\x07=y\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\x8a\x8a\x00\x00ÿ\x01\x00\x01\x00\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04À\x06[\x96\x06¹³\x1e9¤\x8f¤Á/Ö\x9b£ÃQ\x84q[0m" HTTPStatus.BAD_REQUEST -
+2025-03-04 14:58:16,502 - werkzeug - ERROR - 192.168.0.214 - - [04/Mar/2025 14:58:16] code 400, message Bad request version ('\x89O\x98')
+2025-03-04 14:58:16,503 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:58:16] "[35m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03´\x86\x86\x1c\x13\x16\x80ú*}\x01AC\x1dÂ!Øz\x89\x9b¼Îm½\x00×Ð]a<ªå ¼E~=8\x99C¨\x06\x96\x18\x07\x98WrA9á¹G\x8brü\x14ò.õîejL)\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ÚÚ\x00\x00\x00#\x00\x00\x003\x04ï\x04íÊÊ\x00\x01\x00\x11ì\x04À\x9c\x8b\x10~Ê!9eÈ85"²ãµ\x9e@'Õx³Ý(\x8c16Ì\x92\x97rÅ\x92\x00µ²2ÜQÀ<;9\x89\x16F \x81chX?ù\x9a\x9c\x07ò!/bµ¤ËÈ\x9b5\x0f¥³dUÌRã\x81\x08P¬\x82²grÄzÍÈ§[kûeÊË§*,\x12T,\x9b\x1e¹YÀ\x920©Çi`\x85lSTÃ3b\x9bxu\x0fëÃ¹\x7fç9\x9a\x917¢\x02&m1Qâ\x07½r\x18+\x14\x99\x8bÜðMè\x93¼\x9f4m\x81!\x1ev*\x06Y7\x1dr\x03-"¤fT¢uÔuU\x11Ä6\x8eè\x80\x9aãNvõy\x15Ì·\x02Ô-Ë:\x13Ù\x8b~^`}ûÄH½#`\x0eRp\x80²ÀÌña¹ÆMä8^ßi\x19)(7¥Ú\x9eÁB\x99)æ\x16ÒÙÉ¨\x18aR|\x05á!\x14\x0b\x92xÿ±»~B;\x8d\x16lfAU\x1a5É]jlÐ\x83m\x1bê·û,yïG\x15É9²5Fµ®\x08/KU,¥sh\x07¸Ë\x1d1Å\x10õÇò<\x8f0Kº¨dN,\x14\x04ð"\x80gÅ\x91d\x16x\x8cr\\#¦\x87\x96R<'@wÈÑ\x98eq\x03êõ\x14\x0f\x13½Ø¸P\x064\x81!r\x1ezì6TË\x91ÎV\x0egÊ&µ¤Æl\x1bÃ¾\x8b\x14×*\x8fAs:N\x81\x04'\x00»\x14\x9aMÞK\x1f\x95b&4\x85\x89O\x98[0m" HTTPStatus.BAD_REQUEST -
+2025-03-04 14:58:16,518 - werkzeug - ERROR - 192.168.0.214 - - [04/Mar/2025 14:58:16] code 400, message Bad request version ('¤®Ih5¬-6\x831Þ\x84Ê]¥(á\x87Pª¸\x878R;¸÷K\x19')
+2025-03-04 14:58:16,518 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:58:16] "[35m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03ÔÞ\x93\x9d»\x81­bdéâ\x8eâÜ\x9c- @\x915å\x87\x88¨y\x01X¤\x88£ir \x9a\x01\x9bc\x09ò\x01\x8cV¡\x89³áèP_8o0\x90´Ë¦\x9dÜy\x0fDv\x18qø\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x8a\x8a\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x0b\x00\x02\x01\x00\x00-\x00\x02\x01\x01\x00\x12\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04ÀTu©À\x8ag\x00k\x7f)`3Ô@ \x07+²\x06ù\x0bü`"Í\x86Bäfo/p\x01\x1bÚ|Må\x90ådL©I¿b\x16\x12ÆÆ\x81ÈD?½b`:º\x95Må\x14¿1À\x9b¦#\x1aÊO}Ü-I°bö«Ã\x81\x9c³\x085\x0bÙô\x16.\x85Á«RIªÙ¸\x84&~3\x1a\x91\x18\x02Gm×@\x0bè\x7f\x81à2¼rPÌá\x9a$A\x94"g¦¿\x00µW\x89É¥g\x08Y\x1a,\x12\x136¶W\x87\x078vÊP²Ï\x08\x80\x1c\x8a¬£ ¤®Ih5¬-6\x831Þ\x84Ê]¥(á\x87Pª¸\x878R;¸÷K\x19[0m" HTTPStatus.BAD_REQUEST -
+2025-03-04 14:59:00,877 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: pulling_image (10%)
+2025-03-04 14:59:00,879 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:59:00] "[35m[1mGET /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 14:59:00,896 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 14:59:00,896 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: saving_image (20%)
+2025-03-04 14:59:01,198 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: pulling_image (10%)
+2025-03-04 14:59:01,199 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 14:59:01] "[35m[1mGET /scan/nginx:latest HTTP/1.1[0m" 202 -
+2025-03-04 14:59:01,213 - scanners.scan_manager - INFO - Image nginx:latest already available locally
+2025-03-04 14:59:01,214 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: saving_image (20%)
+2025-03-04 14:59:01,302 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: creating_hash (25%)
+2025-03-04 14:59:01,364 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (30%)
+2025-03-04 14:59:01,365 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (30%)
+2025-03-04 14:59:01,365 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (31%)
+2025-03-04 14:59:01,365 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (32%)
+2025-03-04 14:59:01,398 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (33%)
+2025-03-04 14:59:01,398 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (34%)
+2025-03-04 14:59:01,398 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (35%)
+2025-03-04 14:59:01,398 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (36%)
+2025-03-04 14:59:01,398 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (37%)
+2025-03-04 14:59:01,398 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (38%)
+2025-03-04 14:59:01,399 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: extracting_image (39%)
+2025-03-04 14:59:01,399 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: vulnerability_scanning (40%)
+2025-03-04 14:59:01,425 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: trivy_scan_complete (60%)
+2025-03-04 14:59:01,425 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: virus_scanning (60%)
+2025-03-04 14:59:02,115 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: creating_hash (25%)
+2025-03-04 14:59:02,242 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (30%)
+2025-03-04 14:59:02,243 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (30%)
+2025-03-04 14:59:02,243 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (30%)
+2025-03-04 14:59:02,243 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (31%)
+2025-03-04 14:59:02,243 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (32%)
+2025-03-04 14:59:02,275 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (33%)
+2025-03-04 14:59:02,275 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (34%)
+2025-03-04 14:59:02,321 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (35%)
+2025-03-04 14:59:02,321 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (36%)
+2025-03-04 14:59:02,321 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (37%)
+2025-03-04 14:59:02,321 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (38%)
+2025-03-04 14:59:02,321 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: extracting_image (39%)
+2025-03-04 14:59:02,321 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: vulnerability_scanning (40%)
+2025-03-04 14:59:02,349 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: trivy_scan_complete (60%)
+2025-03-04 14:59:02,350 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: virus_scanning (60%)
+2025-03-04 14:59:10,137 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: clamav_scan_complete (80%)
+2025-03-04 14:59:10,137 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: malware_scanning (80%)
+2025-03-04 14:59:10,218 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: yara_scan_complete (90%)
+2025-03-04 14:59:10,218 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: saving_results (95%)
+2025-03-04 14:59:10,219 - scanners.scan_manager - INFO - Scan 66f98b05849bf46c3badd08eea1a92d3 status updated: completed (100%)
+2025-03-04 14:59:11,154 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: clamav_scan_complete (80%)
+2025-03-04 14:59:11,154 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: malware_scanning (80%)
+2025-03-04 14:59:11,264 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: yara_scan_complete (90%)
+2025-03-04 14:59:11,264 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: saving_results (95%)
+2025-03-04 14:59:11,264 - scanners.scan_manager - INFO - Scan fe10f138414638808ffbfaefc4502c42 status updated: completed (100%)
+2025-03-04 15:10:46,999 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: pulling_image (10%)
+2025-03-04 15:10:47,000 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:10:47] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:10:47,017 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 15:10:47,017 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: saving_image (20%)
+2025-03-04 15:10:47,313 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: pulling_image (10%)
+2025-03-04 15:10:47,313 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:10:47] "[35m[1mPOST /scan/nginx:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:10:47,321 - scanners.scan_manager - INFO - Image nginx:latest already available locally
+2025-03-04 15:10:47,321 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: saving_image (20%)
+2025-03-04 15:10:47,333 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: creating_hash (25%)
+2025-03-04 15:10:47,387 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (30%)
+2025-03-04 15:10:47,388 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (30%)
+2025-03-04 15:10:47,388 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (31%)
+2025-03-04 15:10:47,388 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (32%)
+2025-03-04 15:10:47,421 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (33%)
+2025-03-04 15:10:47,421 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (34%)
+2025-03-04 15:10:47,421 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (35%)
+2025-03-04 15:10:47,421 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (36%)
+2025-03-04 15:10:47,421 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (37%)
+2025-03-04 15:10:47,421 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (38%)
+2025-03-04 15:10:47,421 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: extracting_image (39%)
+2025-03-04 15:10:47,421 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: vulnerability_scanning (40%)
+2025-03-04 15:10:47,451 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: trivy_scan_complete (60%)
+2025-03-04 15:10:47,451 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: virus_scanning (60%)
+2025-03-04 15:10:47,885 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:10:47] "GET /scan_status/e72927aadce29295007f5c3125ba5b20 HTTP/1.1" 200 -
+2025-03-04 15:10:47,919 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: creating_hash (25%)
+2025-03-04 15:10:48,047 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (30%)
+2025-03-04 15:10:48,048 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (30%)
+2025-03-04 15:10:48,048 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (30%)
+2025-03-04 15:10:48,048 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (31%)
+2025-03-04 15:10:48,048 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (32%)
+2025-03-04 15:10:48,080 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (33%)
+2025-03-04 15:10:48,081 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (34%)
+2025-03-04 15:10:48,128 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (35%)
+2025-03-04 15:10:48,128 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (36%)
+2025-03-04 15:10:48,128 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (37%)
+2025-03-04 15:10:48,128 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (38%)
+2025-03-04 15:10:48,128 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: extracting_image (39%)
+2025-03-04 15:10:48,128 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: vulnerability_scanning (40%)
+2025-03-04 15:10:48,159 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: trivy_scan_complete (60%)
+2025-03-04 15:10:48,159 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: virus_scanning (60%)
+2025-03-04 15:10:56,241 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: clamav_scan_complete (80%)
+2025-03-04 15:10:56,241 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: malware_scanning (80%)
+2025-03-04 15:10:56,322 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: yara_scan_complete (90%)
+2025-03-04 15:10:56,322 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: saving_results (95%)
+2025-03-04 15:10:56,322 - scanners.scan_manager - INFO - Scan e72927aadce29295007f5c3125ba5b20 status updated: completed (100%)
+2025-03-04 15:10:56,961 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: clamav_scan_complete (80%)
+2025-03-04 15:10:56,961 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: malware_scanning (80%)
+2025-03-04 15:10:57,073 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: yara_scan_complete (90%)
+2025-03-04 15:10:57,073 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: saving_results (95%)
+2025-03-04 15:10:57,074 - scanners.scan_manager - INFO - Scan 87bc37311ae9f6d06cef3566e1fd9fe9 status updated: completed (100%)
+2025-03-04 15:12:22,755 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 15:12:22] "GET /scan_status/e72927aadce29295007f5c3125ba5b20 HTTP/1.1" 200 -
+2025-03-04 15:12:29,896 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: pulling_image (10%)
+2025-03-04 15:12:29,897 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:12:29] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:12:29,913 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 15:12:29,913 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: saving_image (20%)
+2025-03-04 15:12:30,242 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: pulling_image (10%)
+2025-03-04 15:12:30,243 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:12:30] "[35m[1mPOST /scan/nginx:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:12:30,253 - scanners.scan_manager - INFO - Image nginx:latest already available locally
+2025-03-04 15:12:30,254 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: saving_image (20%)
+2025-03-04 15:12:30,279 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: creating_hash (25%)
+2025-03-04 15:12:30,333 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (30%)
+2025-03-04 15:12:30,334 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (30%)
+2025-03-04 15:12:30,334 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (31%)
+2025-03-04 15:12:30,334 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (32%)
+2025-03-04 15:12:30,366 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (33%)
+2025-03-04 15:12:30,366 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (34%)
+2025-03-04 15:12:30,366 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (35%)
+2025-03-04 15:12:30,366 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (36%)
+2025-03-04 15:12:30,366 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (37%)
+2025-03-04 15:12:30,367 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (38%)
+2025-03-04 15:12:30,367 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: extracting_image (39%)
+2025-03-04 15:12:30,367 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: vulnerability_scanning (40%)
+2025-03-04 15:12:30,395 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: trivy_scan_complete (60%)
+2025-03-04 15:12:30,396 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: virus_scanning (60%)
+2025-03-04 15:12:30,789 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:12:30] "GET /scan_status/8e2af749a4dbcf52f009245af1292722 HTTP/1.1" 200 -
+2025-03-04 15:12:30,854 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: creating_hash (25%)
+2025-03-04 15:12:30,980 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (30%)
+2025-03-04 15:12:30,981 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (30%)
+2025-03-04 15:12:30,981 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (30%)
+2025-03-04 15:12:30,981 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (31%)
+2025-03-04 15:12:30,981 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (32%)
+2025-03-04 15:12:31,012 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (33%)
+2025-03-04 15:12:31,012 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (34%)
+2025-03-04 15:12:31,058 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (35%)
+2025-03-04 15:12:31,058 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (36%)
+2025-03-04 15:12:31,058 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (37%)
+2025-03-04 15:12:31,058 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (38%)
+2025-03-04 15:12:31,058 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: extracting_image (39%)
+2025-03-04 15:12:31,058 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: vulnerability_scanning (40%)
+2025-03-04 15:12:31,087 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: trivy_scan_complete (60%)
+2025-03-04 15:12:31,087 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: virus_scanning (60%)
+2025-03-04 15:12:39,206 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: clamav_scan_complete (80%)
+2025-03-04 15:12:39,207 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: malware_scanning (80%)
+2025-03-04 15:12:39,289 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: yara_scan_complete (90%)
+2025-03-04 15:12:39,289 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: saving_results (95%)
+2025-03-04 15:12:39,290 - scanners.scan_manager - INFO - Scan 8e2af749a4dbcf52f009245af1292722 status updated: completed (100%)
+2025-03-04 15:12:39,916 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: clamav_scan_complete (80%)
+2025-03-04 15:12:39,916 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: malware_scanning (80%)
+2025-03-04 15:12:40,026 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: yara_scan_complete (90%)
+2025-03-04 15:12:40,026 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: saving_results (95%)
+2025-03-04 15:12:40,027 - scanners.scan_manager - INFO - Scan 49d3e4716b81aefe4aa10de95989ab7b status updated: completed (100%)
+2025-03-04 15:15:23,069 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: pulling_image (10%)
+2025-03-04 15:15:23,070 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:15:23] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:15:23,098 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 15:15:23,098 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: saving_image (20%)
+2025-03-04 15:15:23,384 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: pulling_image (10%)
+2025-03-04 15:15:23,384 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:15:23] "[35m[1mPOST /scan/nginx:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:15:23,397 - scanners.scan_manager - INFO - Image nginx:latest already available locally
+2025-03-04 15:15:23,397 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: saving_image (20%)
+2025-03-04 15:15:23,470 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: creating_hash (25%)
+2025-03-04 15:15:23,530 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (30%)
+2025-03-04 15:15:23,530 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (30%)
+2025-03-04 15:15:23,530 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (31%)
+2025-03-04 15:15:23,530 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (32%)
+2025-03-04 15:15:23,563 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (33%)
+2025-03-04 15:15:23,563 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (34%)
+2025-03-04 15:15:23,563 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (35%)
+2025-03-04 15:15:23,563 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (36%)
+2025-03-04 15:15:23,564 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (37%)
+2025-03-04 15:15:23,564 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (38%)
+2025-03-04 15:15:23,564 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: extracting_image (39%)
+2025-03-04 15:15:23,564 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: vulnerability_scanning (40%)
+2025-03-04 15:15:23,592 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: trivy_scan_complete (60%)
+2025-03-04 15:15:23,592 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: virus_scanning (60%)
+2025-03-04 15:15:24,025 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:15:24] "GET /scan_status/d677a13cecf0cc34f4a9675c279d6ab1 HTTP/1.1" 200 -
+2025-03-04 15:15:24,063 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: creating_hash (25%)
+2025-03-04 15:15:24,191 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (30%)
+2025-03-04 15:15:24,192 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (30%)
+2025-03-04 15:15:24,192 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (30%)
+2025-03-04 15:15:24,192 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (31%)
+2025-03-04 15:15:24,192 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (32%)
+2025-03-04 15:15:24,223 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (33%)
+2025-03-04 15:15:24,223 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (34%)
+2025-03-04 15:15:24,269 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (35%)
+2025-03-04 15:15:24,269 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (36%)
+2025-03-04 15:15:24,269 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (37%)
+2025-03-04 15:15:24,269 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (38%)
+2025-03-04 15:15:24,269 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: extracting_image (39%)
+2025-03-04 15:15:24,269 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: vulnerability_scanning (40%)
+2025-03-04 15:15:24,298 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: trivy_scan_complete (60%)
+2025-03-04 15:15:24,298 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: virus_scanning (60%)
+2025-03-04 15:15:32,386 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: clamav_scan_complete (80%)
+2025-03-04 15:15:32,386 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: malware_scanning (80%)
+2025-03-04 15:15:32,467 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: yara_scan_complete (90%)
+2025-03-04 15:15:32,467 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: saving_results (95%)
+2025-03-04 15:15:32,467 - scanners.scan_manager - INFO - Scan d677a13cecf0cc34f4a9675c279d6ab1 status updated: completed (100%)
+2025-03-04 15:15:33,117 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: clamav_scan_complete (80%)
+2025-03-04 15:15:33,117 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: malware_scanning (80%)
+2025-03-04 15:15:33,228 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: yara_scan_complete (90%)
+2025-03-04 15:15:33,228 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: saving_results (95%)
+2025-03-04 15:15:33,229 - scanners.scan_manager - INFO - Scan f1526e917f18c51e29a880b29b951e1e status updated: completed (100%)
+2025-03-04 15:16:28,416 - werkzeug - INFO - 192.168.0.87 - - [04/Mar/2025 15:16:28] "GET /scan_status/d677a13cecf0cc34f4a9675c279d6ab1 HTTP/1.1" 200 -
+2025-03-04 15:16:28,457 - werkzeug - INFO - 192.168.0.87 - - [04/Mar/2025 15:16:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-04 15:22:06,944 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: pulling_image (10%)
+2025-03-04 15:22:06,945 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:22:06] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:22:06,961 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 15:22:06,961 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: saving_image (20%)
+2025-03-04 15:22:07,233 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: pulling_image (10%)
+2025-03-04 15:22:07,234 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:22:07] "[35m[1mPOST /scan/nginx:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:22:07,264 - scanners.scan_manager - INFO - Image nginx:latest already available locally
+2025-03-04 15:22:07,264 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: saving_image (20%)
+2025-03-04 15:22:07,342 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: creating_hash (25%)
+2025-03-04 15:22:07,400 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (30%)
+2025-03-04 15:22:07,400 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (30%)
+2025-03-04 15:22:07,400 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (31%)
+2025-03-04 15:22:07,400 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (32%)
+2025-03-04 15:22:07,433 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (33%)
+2025-03-04 15:22:07,434 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (34%)
+2025-03-04 15:22:07,434 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (35%)
+2025-03-04 15:22:07,434 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (36%)
+2025-03-04 15:22:07,434 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (37%)
+2025-03-04 15:22:07,434 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (38%)
+2025-03-04 15:22:07,434 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: extracting_image (39%)
+2025-03-04 15:22:07,434 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: vulnerability_scanning (40%)
+2025-03-04 15:22:07,463 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: trivy_scan_complete (60%)
+2025-03-04 15:22:07,463 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: virus_scanning (60%)
+2025-03-04 15:22:07,868 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: creating_hash (25%)
+2025-03-04 15:22:07,996 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (30%)
+2025-03-04 15:22:07,996 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (30%)
+2025-03-04 15:22:07,996 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (30%)
+2025-03-04 15:22:07,997 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (31%)
+2025-03-04 15:22:07,997 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (32%)
+2025-03-04 15:22:08,027 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (33%)
+2025-03-04 15:22:08,027 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (34%)
+2025-03-04 15:22:08,073 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (35%)
+2025-03-04 15:22:08,073 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (36%)
+2025-03-04 15:22:08,074 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (37%)
+2025-03-04 15:22:08,074 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (38%)
+2025-03-04 15:22:08,074 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: extracting_image (39%)
+2025-03-04 15:22:08,074 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: vulnerability_scanning (40%)
+2025-03-04 15:22:08,099 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: trivy_scan_complete (60%)
+2025-03-04 15:22:08,099 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: virus_scanning (60%)
+2025-03-04 15:22:16,216 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: clamav_scan_complete (80%)
+2025-03-04 15:22:16,216 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: malware_scanning (80%)
+2025-03-04 15:22:16,299 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: yara_scan_complete (90%)
+2025-03-04 15:22:16,299 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: saving_results (95%)
+2025-03-04 15:22:16,299 - scanners.scan_manager - INFO - Scan d0f0ac8717259d2806f23fd474874952 status updated: completed (100%)
+2025-03-04 15:22:16,890 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: clamav_scan_complete (80%)
+2025-03-04 15:22:16,890 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: malware_scanning (80%)
+2025-03-04 15:22:17,000 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: yara_scan_complete (90%)
+2025-03-04 15:22:17,000 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: saving_results (95%)
+2025-03-04 15:22:17,000 - scanners.scan_manager - INFO - Scan efcd306b288ed7162c9ed662d216c0a7 status updated: completed (100%)
+2025-03-04 15:22:17,832 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:22:17] "GET /scan_status/d0f0ac8717259d2806f23fd474874952 HTTP/1.1" 200 -
+2025-03-04 15:22:28,255 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:22:28] "GET /scan_status/efcd306b288ed7162c9ed662d216c0a7 HTTP/1.1" 200 -
+2025-03-04 15:24:59,425 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: pulling_image (10%)
+2025-03-04 15:24:59,427 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:24:59] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:24:59,440 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 15:24:59,440 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: saving_image (20%)
+2025-03-04 15:24:59,892 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: pulling_image (10%)
+2025-03-04 15:24:59,892 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:24:59] "[35m[1mPOST /scan/nginx:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:24:59,906 - scanners.scan_manager - INFO - Image nginx:latest already available locally
+2025-03-04 15:24:59,906 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: saving_image (20%)
+2025-03-04 15:25:00,012 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: creating_hash (25%)
+2025-03-04 15:25:00,071 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (30%)
+2025-03-04 15:25:00,071 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (30%)
+2025-03-04 15:25:00,071 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (31%)
+2025-03-04 15:25:00,071 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (32%)
+2025-03-04 15:25:00,107 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (33%)
+2025-03-04 15:25:00,107 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (34%)
+2025-03-04 15:25:00,107 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (35%)
+2025-03-04 15:25:00,107 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (36%)
+2025-03-04 15:25:00,107 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (37%)
+2025-03-04 15:25:00,107 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (38%)
+2025-03-04 15:25:00,107 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: extracting_image (39%)
+2025-03-04 15:25:00,107 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: vulnerability_scanning (40%)
+2025-03-04 15:25:00,138 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: trivy_scan_complete (60%)
+2025-03-04 15:25:00,138 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: virus_scanning (60%)
+2025-03-04 15:25:00,535 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: creating_hash (25%)
+2025-03-04 15:25:00,663 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (30%)
+2025-03-04 15:25:00,664 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (30%)
+2025-03-04 15:25:00,664 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (30%)
+2025-03-04 15:25:00,664 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (31%)
+2025-03-04 15:25:00,664 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (32%)
+2025-03-04 15:25:00,694 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (33%)
+2025-03-04 15:25:00,694 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (34%)
+2025-03-04 15:25:00,739 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (35%)
+2025-03-04 15:25:00,739 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (36%)
+2025-03-04 15:25:00,739 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (37%)
+2025-03-04 15:25:00,739 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (38%)
+2025-03-04 15:25:00,739 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: extracting_image (39%)
+2025-03-04 15:25:00,739 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: vulnerability_scanning (40%)
+2025-03-04 15:25:00,766 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: trivy_scan_complete (60%)
+2025-03-04 15:25:00,766 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: virus_scanning (60%)
+2025-03-04 15:25:09,022 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: clamav_scan_complete (80%)
+2025-03-04 15:25:09,022 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: malware_scanning (80%)
+2025-03-04 15:25:09,104 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: yara_scan_complete (90%)
+2025-03-04 15:25:09,104 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: saving_results (95%)
+2025-03-04 15:25:09,104 - scanners.scan_manager - INFO - Scan 594b41db75789a3a5d79b22488c2dba7 status updated: completed (100%)
+2025-03-04 15:25:09,696 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: clamav_scan_complete (80%)
+2025-03-04 15:25:09,696 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: malware_scanning (80%)
+2025-03-04 15:25:09,805 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: yara_scan_complete (90%)
+2025-03-04 15:25:09,806 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: saving_results (95%)
+2025-03-04 15:25:09,806 - scanners.scan_manager - INFO - Scan 60b75b86d05ef4edc7fe9c4ab228b381 status updated: completed (100%)
+2025-03-04 15:25:10,407 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:25:10] "GET /scan_status/594b41db75789a3a5d79b22488c2dba7 HTTP/1.1" 200 -
+2025-03-04 15:25:20,826 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:25:20] "GET /scan_status/60b75b86d05ef4edc7fe9c4ab228b381 HTTP/1.1" 200 -
+2025-03-04 15:30:16,766 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: pulling_image (10%)
+2025-03-04 15:30:16,767 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:30:16] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:30:16,781 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 15:30:16,782 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: saving_image (20%)
+2025-03-04 15:30:17,119 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: pulling_image (10%)
+2025-03-04 15:30:17,119 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:30:17] "[35m[1mPOST /scan/nginx:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:30:17,134 - scanners.scan_manager - INFO - Image nginx:latest already available locally
+2025-03-04 15:30:17,134 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: saving_image (20%)
+2025-03-04 15:30:17,171 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: creating_hash (25%)
+2025-03-04 15:30:17,238 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (30%)
+2025-03-04 15:30:17,238 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (30%)
+2025-03-04 15:30:17,238 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (31%)
+2025-03-04 15:30:17,238 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (32%)
+2025-03-04 15:30:17,271 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (33%)
+2025-03-04 15:30:17,271 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (34%)
+2025-03-04 15:30:17,271 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (35%)
+2025-03-04 15:30:17,271 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (36%)
+2025-03-04 15:30:17,271 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (37%)
+2025-03-04 15:30:17,271 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (38%)
+2025-03-04 15:30:17,271 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: extracting_image (39%)
+2025-03-04 15:30:17,271 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: vulnerability_scanning (40%)
+2025-03-04 15:30:17,298 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: trivy_scan_complete (60%)
+2025-03-04 15:30:17,298 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: virus_scanning (60%)
+2025-03-04 15:30:17,732 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: creating_hash (25%)
+2025-03-04 15:30:17,860 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (30%)
+2025-03-04 15:30:17,860 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (30%)
+2025-03-04 15:30:17,861 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (30%)
+2025-03-04 15:30:17,861 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (31%)
+2025-03-04 15:30:17,861 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (32%)
+2025-03-04 15:30:17,891 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (33%)
+2025-03-04 15:30:17,891 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (34%)
+2025-03-04 15:30:17,937 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (35%)
+2025-03-04 15:30:17,937 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (36%)
+2025-03-04 15:30:17,937 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (37%)
+2025-03-04 15:30:17,937 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (38%)
+2025-03-04 15:30:17,937 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: extracting_image (39%)
+2025-03-04 15:30:17,937 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: vulnerability_scanning (40%)
+2025-03-04 15:30:17,969 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: trivy_scan_complete (60%)
+2025-03-04 15:30:17,969 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: virus_scanning (60%)
+2025-03-04 15:30:26,083 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: clamav_scan_complete (80%)
+2025-03-04 15:30:26,083 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: malware_scanning (80%)
+2025-03-04 15:30:26,164 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: yara_scan_complete (90%)
+2025-03-04 15:30:26,164 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: saving_results (95%)
+2025-03-04 15:30:26,164 - scanners.scan_manager - INFO - Scan c24d0f7f8e6384e54d2a3be6f8666221 status updated: completed (100%)
+2025-03-04 15:30:26,785 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: clamav_scan_complete (80%)
+2025-03-04 15:30:26,785 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: malware_scanning (80%)
+2025-03-04 15:30:26,895 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: yara_scan_complete (90%)
+2025-03-04 15:30:26,895 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: saving_results (95%)
+2025-03-04 15:30:26,895 - scanners.scan_manager - INFO - Scan 023b25961f6e583262ad3e5551aee903 status updated: completed (100%)
+2025-03-04 15:30:27,693 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:30:27] "GET /scan_status/c24d0f7f8e6384e54d2a3be6f8666221 HTTP/1.1" 200 -
+2025-03-04 15:30:38,115 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:30:38] "GET /scan_status/023b25961f6e583262ad3e5551aee903 HTTP/1.1" 200 -
+2025-03-04 15:37:01,309 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: pulling_image (10%)
+2025-03-04 15:37:01,310 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:37:01] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:37:01,323 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 15:37:01,323 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: saving_image (20%)
+2025-03-04 15:37:01,629 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: pulling_image (10%)
+2025-03-04 15:37:01,629 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:37:01] "[35m[1mPOST /scan/ayandocker277/docker-scan HTTP/1.1[0m" 202 -
+2025-03-04 15:37:01,650 - scanners.scan_manager - INFO - Image ayandocker277/docker-scan already available locally
+2025-03-04 15:37:01,650 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: saving_image (20%)
+2025-03-04 15:37:01,781 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: creating_hash (25%)
+2025-03-04 15:37:01,837 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (30%)
+2025-03-04 15:37:01,837 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (30%)
+2025-03-04 15:37:01,837 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (31%)
+2025-03-04 15:37:01,837 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (32%)
+2025-03-04 15:37:01,870 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (33%)
+2025-03-04 15:37:01,870 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (34%)
+2025-03-04 15:37:01,870 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (35%)
+2025-03-04 15:37:01,870 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (36%)
+2025-03-04 15:37:01,870 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (37%)
+2025-03-04 15:37:01,870 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (38%)
+2025-03-04 15:37:01,870 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: extracting_image (39%)
+2025-03-04 15:37:01,870 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: vulnerability_scanning (40%)
+2025-03-04 15:37:01,895 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: trivy_scan_complete (60%)
+2025-03-04 15:37:01,895 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: virus_scanning (60%)
+2025-03-04 15:37:02,549 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: creating_hash (25%)
+2025-03-04 15:37:02,652 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (30%)
+2025-03-04 15:37:02,652 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (30%)
+2025-03-04 15:37:02,653 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (30%)
+2025-03-04 15:37:02,653 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (31%)
+2025-03-04 15:37:02,653 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (32%)
+2025-03-04 15:37:02,653 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (33%)
+2025-03-04 15:37:02,660 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (34%)
+2025-03-04 15:37:02,660 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (35%)
+2025-03-04 15:37:02,714 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (36%)
+2025-03-04 15:37:02,714 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (37%)
+2025-03-04 15:37:02,715 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (38%)
+2025-03-04 15:37:02,715 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: extracting_image (39%)
+2025-03-04 15:37:02,715 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: vulnerability_scanning (40%)
+2025-03-04 15:37:02,741 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: trivy_scan_complete (60%)
+2025-03-04 15:37:02,741 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: virus_scanning (60%)
+2025-03-04 15:37:10,724 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: clamav_scan_complete (80%)
+2025-03-04 15:37:10,725 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: malware_scanning (80%)
+2025-03-04 15:37:10,806 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: yara_scan_complete (90%)
+2025-03-04 15:37:10,806 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: saving_results (95%)
+2025-03-04 15:37:10,807 - scanners.scan_manager - INFO - Scan d212d0c52e14730dd44c0cae0c68133c status updated: completed (100%)
+2025-03-04 15:37:13,860 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: clamav_scan_complete (80%)
+2025-03-04 15:37:13,860 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: malware_scanning (80%)
+2025-03-04 15:37:13,970 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:37:13] "GET /scan_status/d212d0c52e14730dd44c0cae0c68133c HTTP/1.1" 200 -
+2025-03-04 15:37:14,022 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: yara_scan_complete (90%)
+2025-03-04 15:37:14,022 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: saving_results (95%)
+2025-03-04 15:37:14,022 - scanners.scan_manager - INFO - Scan 37a7ac8e835751e2380d2a50b1ef92c0 status updated: completed (100%)
+2025-03-04 15:37:24,806 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:37:24] "GET /scan_status/37a7ac8e835751e2380d2a50b1ef92c0 HTTP/1.1" 200 -
+2025-03-04 15:40:08,509 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 15:40:08] "GET /scan_status/37a7ac8e835751e2380d2a50b1ef92c0 HTTP/1.1" 200 -
+2025-03-04 15:40:21,282 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 15:40:21] "GET /scan_status/37a7ac8e835751e2380d2a50b1ef92c0 HTTP/1.1" 200 -
+2025-03-04 15:41:09,791 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: pulling_image (10%)
+2025-03-04 15:41:09,791 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 15:41:09] "[35m[1mGET /scan/ayandocker277/docker-scan HTTP/1.1[0m" 202 -
+2025-03-04 15:41:09,825 - scanners.scan_manager - INFO - Image ayandocker277/docker-scan already available locally
+2025-03-04 15:41:09,825 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: saving_image (20%)
+2025-03-04 15:41:10,425 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: creating_hash (25%)
+2025-03-04 15:41:10,536 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (30%)
+2025-03-04 15:41:10,536 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (30%)
+2025-03-04 15:41:10,536 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (30%)
+2025-03-04 15:41:10,537 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (31%)
+2025-03-04 15:41:10,537 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (32%)
+2025-03-04 15:41:10,537 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (33%)
+2025-03-04 15:41:10,544 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (34%)
+2025-03-04 15:41:10,544 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (35%)
+2025-03-04 15:41:10,599 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (36%)
+2025-03-04 15:41:10,599 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (37%)
+2025-03-04 15:41:10,599 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (38%)
+2025-03-04 15:41:10,599 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: extracting_image (39%)
+2025-03-04 15:41:10,600 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: vulnerability_scanning (40%)
+2025-03-04 15:41:10,628 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: trivy_scan_complete (60%)
+2025-03-04 15:41:10,628 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: virus_scanning (60%)
+2025-03-04 15:41:21,305 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: clamav_scan_complete (80%)
+2025-03-04 15:41:21,305 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: malware_scanning (80%)
+2025-03-04 15:41:21,467 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: yara_scan_complete (90%)
+2025-03-04 15:41:21,468 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: saving_results (95%)
+2025-03-04 15:41:21,468 - scanners.scan_manager - INFO - Scan d4547e3b272eb1eebd1068da7ead9850 status updated: completed (100%)
+2025-03-04 15:41:34,384 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 15:41:34] "GET /scan_status/d4547e3b272eb1eebd1068da7ead9850 HTTP/1.1" 200 -
+2025-03-04 15:42:29,461 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: pulling_image (10%)
+2025-03-04 15:42:29,462 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:42:29] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:42:29,502 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 15:42:29,502 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: saving_image (20%)
+2025-03-04 15:42:29,860 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: pulling_image (10%)
+2025-03-04 15:42:29,861 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:42:29] "[35m[1mPOST /scan/ayandocker277/docker-scan:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:42:29,887 - scanners.scan_manager - INFO - Image ayandocker277/docker-scan:latest already available locally
+2025-03-04 15:42:29,887 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: saving_image (20%)
+2025-03-04 15:42:30,093 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: creating_hash (25%)
+2025-03-04 15:42:30,148 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (30%)
+2025-03-04 15:42:30,148 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (30%)
+2025-03-04 15:42:30,148 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (31%)
+2025-03-04 15:42:30,148 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (32%)
+2025-03-04 15:42:30,181 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (33%)
+2025-03-04 15:42:30,181 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (34%)
+2025-03-04 15:42:30,182 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (35%)
+2025-03-04 15:42:30,182 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (36%)
+2025-03-04 15:42:30,182 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (37%)
+2025-03-04 15:42:30,182 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (38%)
+2025-03-04 15:42:30,182 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: extracting_image (39%)
+2025-03-04 15:42:30,182 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: vulnerability_scanning (40%)
+2025-03-04 15:42:30,210 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: trivy_scan_complete (60%)
+2025-03-04 15:42:30,210 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: virus_scanning (60%)
+2025-03-04 15:42:30,417 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: creating_hash (25%)
+2025-03-04 15:42:30,518 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (30%)
+2025-03-04 15:42:30,519 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (30%)
+2025-03-04 15:42:30,519 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (30%)
+2025-03-04 15:42:30,519 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (31%)
+2025-03-04 15:42:30,519 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (32%)
+2025-03-04 15:42:30,519 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (33%)
+2025-03-04 15:42:30,526 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (34%)
+2025-03-04 15:42:30,526 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (35%)
+2025-03-04 15:42:30,579 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (36%)
+2025-03-04 15:42:30,580 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (37%)
+2025-03-04 15:42:30,580 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (38%)
+2025-03-04 15:42:30,580 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: extracting_image (39%)
+2025-03-04 15:42:30,580 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: vulnerability_scanning (40%)
+2025-03-04 15:42:30,605 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: trivy_scan_complete (60%)
+2025-03-04 15:42:30,605 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: virus_scanning (60%)
+2025-03-04 15:42:39,038 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: clamav_scan_complete (80%)
+2025-03-04 15:42:39,038 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: malware_scanning (80%)
+2025-03-04 15:42:39,119 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: yara_scan_complete (90%)
+2025-03-04 15:42:39,119 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: saving_results (95%)
+2025-03-04 15:42:39,120 - scanners.scan_manager - INFO - Scan e1633d45776f56e93da4a9792c6dfb5e status updated: completed (100%)
+2025-03-04 15:42:41,700 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: clamav_scan_complete (80%)
+2025-03-04 15:42:41,700 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: malware_scanning (80%)
+2025-03-04 15:42:41,860 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: yara_scan_complete (90%)
+2025-03-04 15:42:41,860 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: saving_results (95%)
+2025-03-04 15:42:41,860 - scanners.scan_manager - INFO - Scan c5dd1228458a6c44cfdff5323a0e8b25 status updated: completed (100%)
+2025-03-04 15:42:44,436 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:42:44] "GET /scan_status/e1633d45776f56e93da4a9792c6dfb5e HTTP/1.1" 200 -
+2025-03-04 15:42:55,015 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:42:55] "GET /scan_status/c5dd1228458a6c44cfdff5323a0e8b25 HTTP/1.1" 200 -
+2025-03-04 15:55:48,750 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: pulling_image (10%)
+2025-03-04 15:55:48,751 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:55:48] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:55:48,777 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 15:55:48,777 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: saving_image (20%)
+2025-03-04 15:55:49,065 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: pulling_image (10%)
+2025-03-04 15:55:49,065 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:55:49] "[35m[1mPOST /scan/ayandocker277/docker-scan HTTP/1.1[0m" 202 -
+2025-03-04 15:55:49,089 - scanners.scan_manager - INFO - Image ayandocker277/docker-scan already available locally
+2025-03-04 15:55:49,089 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: saving_image (20%)
+2025-03-04 15:55:49,231 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: creating_hash (25%)
+2025-03-04 15:55:49,287 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (30%)
+2025-03-04 15:55:49,288 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (30%)
+2025-03-04 15:55:49,288 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (31%)
+2025-03-04 15:55:49,288 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (32%)
+2025-03-04 15:55:49,322 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (33%)
+2025-03-04 15:55:49,322 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (34%)
+2025-03-04 15:55:49,322 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (35%)
+2025-03-04 15:55:49,322 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (36%)
+2025-03-04 15:55:49,322 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (37%)
+2025-03-04 15:55:49,322 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (38%)
+2025-03-04 15:55:49,322 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: extracting_image (39%)
+2025-03-04 15:55:49,322 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: vulnerability_scanning (40%)
+2025-03-04 15:55:49,347 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: trivy_scan_complete (60%)
+2025-03-04 15:55:49,347 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: virus_scanning (60%)
+2025-03-04 15:55:49,605 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: creating_hash (25%)
+2025-03-04 15:55:49,707 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (30%)
+2025-03-04 15:55:49,708 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (30%)
+2025-03-04 15:55:49,708 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (30%)
+2025-03-04 15:55:49,708 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (31%)
+2025-03-04 15:55:49,708 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (32%)
+2025-03-04 15:55:49,708 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (33%)
+2025-03-04 15:55:49,716 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (34%)
+2025-03-04 15:55:49,716 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (35%)
+2025-03-04 15:55:49,772 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (36%)
+2025-03-04 15:55:49,773 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (37%)
+2025-03-04 15:55:49,773 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (38%)
+2025-03-04 15:55:49,773 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: extracting_image (39%)
+2025-03-04 15:55:49,773 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: vulnerability_scanning (40%)
+2025-03-04 15:55:49,803 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: trivy_scan_complete (60%)
+2025-03-04 15:55:49,803 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: virus_scanning (60%)
+2025-03-04 15:55:58,334 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: clamav_scan_complete (80%)
+2025-03-04 15:55:58,334 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: malware_scanning (80%)
+2025-03-04 15:55:58,417 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: yara_scan_complete (90%)
+2025-03-04 15:55:58,417 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: saving_results (95%)
+2025-03-04 15:55:58,417 - scanners.scan_manager - INFO - Scan 19756e45dbf3efcdb003723de4ce7f4f status updated: completed (100%)
+2025-03-04 15:55:59,732 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:55:59] "GET /scan_status/19756e45dbf3efcdb003723de4ce7f4f HTTP/1.1" 200 -
+2025-03-04 15:56:01,057 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: clamav_scan_complete (80%)
+2025-03-04 15:56:01,057 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: malware_scanning (80%)
+2025-03-04 15:56:01,216 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: yara_scan_complete (90%)
+2025-03-04 15:56:01,216 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: saving_results (95%)
+2025-03-04 15:56:01,216 - scanners.scan_manager - INFO - Scan df9ca45d8e69435a843797c8b3597efd status updated: completed (100%)
+2025-03-04 15:56:10,165 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:56:10] "GET /scan_status/df9ca45d8e69435a843797c8b3597efd HTTP/1.1" 200 -
+2025-03-04 15:57:53,143 - logger_config - INFO - Starting Docker Image Security Scanner
+2025-03-04 15:57:53,145 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.178:5000
+2025-03-04 15:57:53,145 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-04 15:59:12,267 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: pulling_image (10%)
+2025-03-04 15:59:12,268 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 15:59:12] "[35m[1mGET /scan/ayandocker277/docker-scan HTTP/1.1[0m" 202 -
+2025-03-04 15:59:12,292 - scanners.scan_manager - INFO - Image ayandocker277/docker-scan already available locally
+2025-03-04 15:59:12,292 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: saving_image (20%)
+2025-03-04 15:59:13,238 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: creating_hash (25%)
+2025-03-04 15:59:13,344 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (30%)
+2025-03-04 15:59:13,345 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (30%)
+2025-03-04 15:59:13,345 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (30%)
+2025-03-04 15:59:13,345 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (31%)
+2025-03-04 15:59:13,345 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (32%)
+2025-03-04 15:59:13,345 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (33%)
+2025-03-04 15:59:13,352 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (34%)
+2025-03-04 15:59:13,352 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (35%)
+2025-03-04 15:59:13,410 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (36%)
+2025-03-04 15:59:13,410 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (37%)
+2025-03-04 15:59:13,410 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (38%)
+2025-03-04 15:59:13,410 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: extracting_image (39%)
+2025-03-04 15:59:13,411 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: vulnerability_scanning (40%)
+2025-03-04 15:59:13,436 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: trivy_scan_complete (60%)
+2025-03-04 15:59:13,436 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: virus_scanning (60%)
+2025-03-04 15:59:24,108 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: clamav_scan_complete (80%)
+2025-03-04 15:59:24,108 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: malware_scanning (80%)
+2025-03-04 15:59:24,272 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: yara_scan_complete (90%)
+2025-03-04 15:59:24,272 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: saving_results (95%)
+2025-03-04 15:59:24,272 - scanners.scan_manager - INFO - Scan 3d641891a396ed6b959adf839f30b0a2 status updated: unsafe (100%)
+2025-03-04 15:59:36,150 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2025 15:59:36] "GET /scan_status/3d641891a396ed6b959adf839f30b0a2 HTTP/1.1" 200 -
+2025-03-04 15:59:43,472 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: pulling_image (10%)
+2025-03-04 15:59:43,473 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:59:43] "[35m[1mPOST /scan/ubuntu:latest HTTP/1.1[0m" 202 -
+2025-03-04 15:59:43,488 - scanners.scan_manager - INFO - Image ubuntu:latest already available locally
+2025-03-04 15:59:43,489 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: saving_image (20%)
+2025-03-04 15:59:43,881 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: pulling_image (10%)
+2025-03-04 15:59:43,882 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:59:43] "[35m[1mPOST /scan/ayandocker277/docker-scan HTTP/1.1[0m" 202 -
+2025-03-04 15:59:43,893 - scanners.scan_manager - INFO - Image ayandocker277/docker-scan already available locally
+2025-03-04 15:59:43,893 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: saving_image (20%)
+2025-03-04 15:59:43,934 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: creating_hash (25%)
+2025-03-04 15:59:43,990 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (30%)
+2025-03-04 15:59:43,991 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (30%)
+2025-03-04 15:59:43,991 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (31%)
+2025-03-04 15:59:43,991 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (32%)
+2025-03-04 15:59:44,025 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (33%)
+2025-03-04 15:59:44,025 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (34%)
+2025-03-04 15:59:44,025 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (35%)
+2025-03-04 15:59:44,025 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (36%)
+2025-03-04 15:59:44,026 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (37%)
+2025-03-04 15:59:44,026 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (38%)
+2025-03-04 15:59:44,026 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: extracting_image (39%)
+2025-03-04 15:59:44,026 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: vulnerability_scanning (40%)
+2025-03-04 15:59:44,054 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: trivy_scan_complete (60%)
+2025-03-04 15:59:44,054 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: virus_scanning (60%)
+2025-03-04 15:59:44,410 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: creating_hash (25%)
+2025-03-04 15:59:44,514 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (30%)
+2025-03-04 15:59:44,514 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (30%)
+2025-03-04 15:59:44,515 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (30%)
+2025-03-04 15:59:44,515 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (31%)
+2025-03-04 15:59:44,515 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (32%)
+2025-03-04 15:59:44,515 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (33%)
+2025-03-04 15:59:44,521 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (34%)
+2025-03-04 15:59:44,521 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (35%)
+2025-03-04 15:59:44,576 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (36%)
+2025-03-04 15:59:44,576 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (37%)
+2025-03-04 15:59:44,576 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (38%)
+2025-03-04 15:59:44,576 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: extracting_image (39%)
+2025-03-04 15:59:44,576 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: vulnerability_scanning (40%)
+2025-03-04 15:59:44,602 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: trivy_scan_complete (60%)
+2025-03-04 15:59:44,602 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: virus_scanning (60%)
+2025-03-04 15:59:53,150 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: clamav_scan_complete (80%)
+2025-03-04 15:59:53,150 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: malware_scanning (80%)
+2025-03-04 15:59:53,233 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: yara_scan_complete (90%)
+2025-03-04 15:59:53,233 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: saving_results (95%)
+2025-03-04 15:59:53,233 - scanners.scan_manager - INFO - Scan b22be64ae54303936309e4b86656f8e9 status updated: safe (100%)
+2025-03-04 15:59:54,695 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 15:59:54] "GET /scan_status/b22be64ae54303936309e4b86656f8e9 HTTP/1.1" 200 -
+2025-03-04 15:59:55,997 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: clamav_scan_complete (80%)
+2025-03-04 15:59:55,998 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: malware_scanning (80%)
+2025-03-04 15:59:56,157 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: yara_scan_complete (90%)
+2025-03-04 15:59:56,157 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: saving_results (95%)
+2025-03-04 15:59:56,158 - scanners.scan_manager - INFO - Scan 84eaf983009c06e48e6154902f31e599 status updated: unsafe (100%)
+2025-03-04 16:00:05,079 - werkzeug - INFO - 192.168.0.214 - - [04/Mar/2025 16:00:05] "GET /scan_status/84eaf983009c06e48e6154902f31e599 HTTP/1.1" 200 -

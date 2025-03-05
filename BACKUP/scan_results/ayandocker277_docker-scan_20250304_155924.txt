@@ -1,0 +1,34 @@
+Scan Results for Image: ayandocker277/docker-scan
+Timestamp: 2025-03-04T15:59:24.272682
+============================================================
+
+SUMMARY
+------------------------------------------------------------
+Vulnerabilities: 0 total
+  - CRITICAL: 0
+  - HIGH: 0
+  - MEDIUM: 0
+  - LOW: 0
+  - UNKNOWN: 0
+Malware/Virus Threats: 1
+YARA Rule Matches: 1
+
+VULNERABILITY SCAN (Trivy)
+------------------------------------------------------------
+
+
+VIRUS SCAN (ClamAV)
+------------------------------------------------------------
+Found 1 threats:
+/tmp/docker_image_extract_n1u80tdz/blobs/sha256/1b868366867178c05ebc795a72d093691ed69a4cfe16a2451733f5dd61ba5445: Eicar-Signature FOUND
+
+MALWARE SCAN (YARA)
+------------------------------------------------------------
+Found 1 YARA matches:
+suspicious_strings /tmp/docker_image_extract_n1u80tdz/blobs/sha256/be96a3f634de79f523f07c7e4e0216c28af45eb5776e7a6238a2392f71e01069
+
+FILESYSTEM SECURITY SCAN
+------------------------------------------------------------
+
+
+FINAL STATUS: unsafe
