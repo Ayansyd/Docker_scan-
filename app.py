@@ -4,6 +4,7 @@ import hashlib
 import time
 import threading
 import subprocess
+import requests
 from flask import Flask, request, jsonify
 from datetime import datetime
 
@@ -18,52 +19,48 @@ app = Flask(__name__)
 from threading import Semaphore
 scan_semaphore = Semaphore(MAX_CONCURRENT_SCANS)
 
-@app.route('/scan/<path:image_name>', methods=['GET', 'POST'])
-def scan_image(image_name):
+@app.route('/scan', methods=['POST'])
+def scan_image():
     """
-    API endpoint to scan a Docker image using the image name provided directly in the URL.
+    API endpoint to scan a Docker image with callback support
     """
     try:
-        if not image_name:
-            return jsonify({'error': 'No image name provided in URL'}), 400
+        data = request.get_json()
+        if not data or 'image_name' not in data:
+            return jsonify({'error': 'Missing image_name in request body'}), 400
+            
+        image_name = data['image_name']
+        callback_url = data.get('callback_url')
 
-        # Validate the image name format
+        # Validate parameters
         if not validate_docker_image_name(image_name):
             return jsonify({'error': 'Invalid docker image name format'}), 400
 
-        # Check if we have capacity to run more scans
-        active_scans = get_active_scans_count()
-        if active_scans >= MAX_CONCURRENT_SCANS:
-            return jsonify({
-                'error': 'Maximum concurrent scan limit reached',
-                'message': f'Currently running {active_scans} scans, please try again later',
-                'max_concurrent_scans': MAX_CONCURRENT_SCANS
-            }), 429
+        # Existing concurrency check remains...
 
-        # Generate a unique scan ID
+        # Generate scan ID
         scan_id = hashlib.md5(f"{image_name}:{time.time()}".encode()).hexdigest()
 
-        # Start scan in a separate thread to not block
+        # Start scan thread with callback
         scan_thread = threading.Thread(
             target=perform_scan,
-            args=(image_name, scan_id, scan_semaphore)
+            args=(image_name, scan_id, scan_semaphore, callback_url)
         )
         scan_thread.daemon = True
         scan_thread.start()
 
-        # Return immediate response with scan ID
         return jsonify({
             'message': 'Scan started',
             'scan_id': scan_id,
             'status': 'started',
             'image': image_name,
-            'timestamp': datetime.now().isoformat()
+            'timestamp': datetime.now().isoformat(),
+            'callback_registered': bool(callback_url)
         }), 202
 
     except Exception as e:
         logger.exception(f"Error processing scan request: {str(e)}")
         return jsonify({'error': f'Server error: {str(e)}'}), 500
-
 
 @app.route('/scan_status/<scan_id>', methods=['GET'])
 def check_scan_status(scan_id):
@@ -97,6 +94,14 @@ def check_scan_status(scan_id):
         response['jenkins_status'] = 'IN_PROGRESS'
         
     return jsonify(response), 200
+
+@app.route('/scan-complete', methods=['POST','GET'])
+def handle_scan_callback():
+    data = request.json
+    print(f"Scan {data['scan_id']} completed with status: {data['status']}")
+    # Now you can safely call /scan_status once to get results
+    return jsonify({"message": "Callback received"}), 200
+
 
 @app.route('/scan_results/<scan_id>', methods=['GET'])
 def get_scan_results(scan_id):

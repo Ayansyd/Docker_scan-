@@ -8,6 +8,7 @@ import time
 import threading
 import json
 import logging
+import requests 
 from datetime import datetime
 
 from config import RESULTS_FOLDER
@@ -18,6 +19,43 @@ from scanners.yara_scanner import run_yara_scan
 
 logger = logging.getLogger(__name__)
 active_scans = {}
+
+def send_scan_callback(callback_url, scan_id):
+    """
+    Send scan completion notification to callback URL
+    with retry mechanism and timeout
+    """
+    max_retries = 3
+    backoff_factor = 1  # seconds
+    scan_info = get_active_scan(scan_id)
+    
+    if not scan_info:
+        logger.error(f"Callback failed: Scan ID {scan_id} not found")
+        return
+
+    payload = {
+        'scan_id': scan_id,
+        'status': scan_info['status'],
+        'results_url': f"/scan_results/{scan_id}",
+        'completed_at': scan_info.get('end_time')
+    }
+
+    for attempt in range(max_retries):
+        try:
+            response = requests.post(
+                callback_url,
+                json=payload,
+                timeout=5,
+                headers={'User-Agent': 'Docker-Scanner/1.0'}
+            )
+            response.raise_for_status()
+            logger.info(f"Callback to {callback_url} succeeded")
+            return
+        except Exception as e:
+            logger.warning(f"Callback attempt {attempt+1} failed: {str(e)}")
+            time.sleep(backoff_factor * (2 ** attempt))
+    
+    logger.error(f"Failed all {max_retries} callback attempts to {callback_url}")
 
 def save_results_to_file(image_name, scan_results):
     """
@@ -82,17 +120,17 @@ def update_scan_status(scan_id, status, progress, error=None):
     else:
         logger.warning(f"Attempted to update status for unknown scan ID: {scan_id}")
 
-def perform_scan(image_name, scan_id, scan_semaphore):
+def perform_scan(image_name, scan_id, scan_semaphore,callback_url=None):
     """
     Perform a comprehensive scan on a Docker image.
     """
-    # Initialize scan status
     active_scans[scan_id] = {
         "status": "preparing",
         "image": image_name,
         "start_time": datetime.now().isoformat(),
         "progress": 0,
-        "error": None
+        "error": None,
+        "callback_url": callback_url
     }
     
     results = {
@@ -310,8 +348,49 @@ def perform_scan(image_name, scan_id, scan_semaphore):
                 shutil.rmtree(extracted_dir)
             except Exception as e:
                 logger.warning(f"Failed to remove temp directory {extracted_dir}: {str(e)}")
-    
+
+        if callback_url:
+            try:
+                callback_thread = threading.Thread(
+                    target=send_scan_callback,
+                    args=(scan_id, active_scans[scan_id])
+                )
+                callback_thread.daemon = True
+                callback_thread.start()
+            except Exception as e:
+                logger.error(f"Failed to trigger callback for {scan_id}: {str(e)}")
+
     return results
+
+def send_scan_callback(scan_id, scan_data):
+    """
+    Send scan completion callback to registered URL
+    """
+    try:
+        payload = {
+            'scan_id': scan_id,
+            'status': scan_data['status'],
+            'image': scan_data['image'],
+            'timestamp': datetime.now().isoformat()
+        }
+        
+        if scan_data['status'] == 'failed':
+            payload['error'] = scan_data.get('error', 'Unknown error')
+
+        response = requests.post(
+            scan_data['callback_url'],
+            json=payload,
+            timeout=5
+        )
+        
+        if response.status_code != 200:
+            logger.warning(f"Callback to {scan_data['callback_url']} "
+                         f"failed with status {response.status_code}")
+            
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Callback request failed for {scan_data['callback_url']}: {str(e)}")
+    except Exception as e:
+        logger.error(f"Unexpected error during callback for {scan_id}: {str(e)}")
 
 def get_active_scan(scan_id):
     """
